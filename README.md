@@ -1,47 +1,126 @@
-# 🌸 Saheli — Women's Health Awareness Support System
+# 🌸 Saheli
 
-Saheli is a beginner-friendly, offline-first web application for **ASHA workers and community health workers** to register women, log symptoms, receive awareness guidance, and track referral alerts — all without an internet connection.
+### Recognizing Women's Health Concerns Before They Are Overlooked
 
-> **Important:** Saheli is an **awareness and referral support tool only**. It does not diagnose any condition. All high-risk alerts should be followed up with the nearest PHC or hospital.
+Saheli is a Women's Health Awareness Support System designed for ASHA workers and community health workers. It helps frontline healthcare workers record symptoms, identify recurring health concerns, generate awareness guidance, and encourage timely medical consultation.
 
----
-
-## Tech Stack
-
-| Layer | Technology |
-|-------|-----------|
-| Frontend | Next.js 14 · TypeScript · Tailwind CSS |
-| Backend | FastAPI · Python |
-| Database | SQLite (file-based, no server needed) |
-| ORM | SQLAlchemy |
+The system is designed to support health awareness and referral decisions. It does **not diagnose diseases** and should not be used as a substitute for professional medical advice.
 
 ---
 
-## Project Structure
+## 🌍 Sustainable Development Goals (SDGs)
 
+### Primary SDG
+
+* SDG 3: Good Health and Well-Being
+
+### Secondary SDGs
+
+* SDG 5: Gender Equality
+* SDG 10: Reduced Inequalities
+
+---
+
+## 💡 Inspiration
+
+Women's health concerns are often overlooked, normalized, or identified only after they become severe. In many communities, symptoms remain unreported for months due to limited awareness, social stigma, or restricted access to healthcare facilities.
+
+This inspired the development of Saheli, a platform that supports community health workers in documenting symptoms systematically, identifying recurring health concerns, and encouraging timely medical consultation before conditions become more serious.
+
+---
+
+## 🎯 Problem Statement
+
+Many women in rural and underserved communities experience symptoms related to reproductive health, pregnancy, nutrition, and general well-being. Due to limited health awareness, delayed reporting, and restricted access to healthcare facilities, these symptoms are often overlooked until they become severe.
+
+Community health workers play a critical role in connecting women with healthcare services, but they may not always have structured digital tools to record symptoms, identify patterns, and prioritize referrals.
+
+Saheli addresses this challenge by providing an easy-to-use awareness and referral support system for frontline healthcare workers.
+
+---
+
+## 🚀 Solution Overview
+
+Saheli enables community health workers to:
+
+* Register women in their communities
+* Record symptoms during health visits
+* Analyze symptom patterns using a rule-based awareness engine
+* Generate awareness guidance
+* Identify potentially high-risk cases
+* Recommend timely medical consultation
+* Track alerts and referrals
+* View community-level health insights
+
+The platform focuses on awareness, early intervention, and referral support rather than diagnosis.
+
+---
+
+## 🎯 Key Objectives
+
+* Improve women's health awareness
+* Support frontline community health workers
+* Encourage timely medical consultation
+* Enable structured symptom tracking
+* Promote equitable healthcare access
+* Provide transparent and explainable assessments
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer                  | Technology                  |
+| ---------------------- | --------------------------- |
+| Frontend               | Next.js 14                  |
+| Language               | TypeScript                  |
+| Styling                | Tailwind CSS                |
+| Backend                | FastAPI                     |
+| Database               | SQLite                      |
+| ORM                    | SQLAlchemy                  |
+| Data Validation        | Pydantic                    |
+| AI Component           | Rule-Based Awareness Engine |
+| AI Development Support | IBM BOB                     |
+| Learning Framework     | IBM SkillsBuild             |
+
+---
+
+## 🏗️ Project Architecture
+
+```text
+Community Health Worker
+            │
+            ▼
+      Saheli Frontend
+        (Next.js)
+            │
+            ▼
+      FastAPI Backend
+            │
+            ▼
+   Awareness Engine
+            │
+            ▼
+      SQLite Database
 ```
+
+---
+
+## 📁 Project Structure
+
+```text
 saheli/
 ├── backend/
-│   ├── main.py             # FastAPI app & all API routes
-│   ├── database.py         # SQLite connection & session
-│   ├── models.py           # SQLAlchemy ORM models
-│   ├── schemas.py          # Pydantic request/response schemas
-│   ├── awareness_engine.py # Symptom analysis & awareness logic
-│   └── requirements.txt    # Python dependencies
+│   ├── main.py
+│   ├── database.py
+│   ├── models.py
+│   ├── schemas.py
+│   ├── awareness_engine.py
+│   └── requirements.txt
 │
 ├── frontend/
 │   ├── src/
 │   │   ├── app/
-│   │   │   ├── layout.tsx          # Root layout with sidebar nav
-│   │   │   ├── globals.css         # Global styles
-│   │   │   ├── page.tsx            # Dashboard
-│   │   │   ├── register/page.tsx   # Register a woman
-│   │   │   ├── symptoms/page.tsx   # Log symptoms & get assessment
-│   │   │   ├── history/page.tsx    # Assessment history
-│   │   │   ├── report/page.tsx     # Awareness report with charts
-│   │   │   └── alerts/page.tsx     # Alerts management
 │   │   └── lib/
-│   │       └── api.ts              # All API calls to backend
 │   ├── package.json
 │   ├── tsconfig.json
 │   ├── tailwind.config.ts
@@ -53,140 +132,217 @@ saheli/
 
 ---
 
-## Getting Started
+## ✨ Features
+
+### 📊 Dashboard
+
+* Community health overview
+* High-risk assessment count
+* Referral statistics
+* Village-wise health insights
+* Recent assessments summary
+
+### 👩 Register Woman
+
+* Name
+* Age
+* Village
+* Contact information
+* Pregnancy status
+* Additional notes
+
+### 🩺 Symptom Assessment
+
+* Record symptoms across multiple health categories
+* General health symptoms
+* Menstrual health symptoms
+* Pregnancy-related symptoms
+* Postpartum concerns
+* Nutrition-related symptoms
+
+### 🧠 Awareness Analysis
+
+* Low Risk Assessment
+* Moderate Risk Assessment
+* High Risk Assessment
+
+Provides awareness guidance and referral recommendations based on recorded symptom patterns.
+
+### 🔔 Alerts System
+
+* Automatically generates alerts for high-risk assessments
+* Tracks unresolved cases
+* Supports follow-up actions
+* Referral management workflow
+
+### 📈 Reporting & Analytics
+
+* Risk distribution charts
+* Referral statistics
+* Assessment trends
+* Village-level insights
+* Community health overview
+
+---
+
+## 📸 Screenshots
+
+### Dashboard
+
+*Add dashboard screenshot here*
+
+### Register Woman
+
+*Add registration page screenshot here*
+
+### Symptom Assessment
+
+*Add assessment screenshot here*
+
+### Alerts Management
+
+*Add alerts screenshot here*
+
+### Reports & Analytics
+
+*Add reports screenshot here*
+
+---
+
+## ⚙️ Installation
 
 ### Prerequisites
 
-- Python 3.10 or higher
-- Node.js 18 or higher
-- npm (comes with Node.js)
+* Python 3.10+
+* Node.js 18+
+* npm
 
 ---
 
-### Step 1 — Start the Backend
-
-Open a terminal and navigate to the `backend` folder:
+### Backend Setup
 
 ```bash
-cd saheli/backend
-```
+cd backend
 
-Create a virtual environment (recommended):
-
-```bash
 python -m venv venv
-source venv/bin/activate        # On Windows: venv\Scripts\activate
-```
 
-Install dependencies:
+# Windows
+venv\Scripts\activate
 
-```bash
+# Linux/Mac
+source venv/bin/activate
+
 pip install -r requirements.txt
-```
 
-Start the server:
-
-```bash
 uvicorn main:app --reload --port 8000
 ```
 
-You should see:
-```
-INFO:     Uvicorn running on http://127.0.0.1:8000
+Backend runs at:
+
+```text
+http://localhost:8000
 ```
 
-The SQLite database (`saheli.db`) is created automatically in the `backend/` folder on first run.
+API Documentation:
+
+```text
+http://localhost:8000/docs
+```
 
 ---
 
-### Step 2 — Start the Frontend
-
-Open a **second terminal** and navigate to the `frontend` folder:
+### Frontend Setup
 
 ```bash
-cd saheli/frontend
-```
+cd frontend
 
-Install dependencies:
-
-```bash
 npm install
-```
 
-Start the development server:
-
-```bash
 npm run dev
 ```
 
-Open your browser and go to: **http://localhost:3000**
+Frontend runs at:
+
+```text
+http://localhost:3000
+```
 
 ---
 
-## Features
+## 📡 API Endpoints
 
-### 📊 Dashboard
-- Summary of registered women, pregnant women, high-risk assessments, and unresolved alerts
-- Recent assessments at a glance
-- Women breakdown by village
-
-### 👩 Register Woman
-- Register a woman with name, age, village, contact, pregnancy status, last menstrual period, and number of children
-
-### 🩺 Log Symptoms
-- Select from 30+ symptoms across categories: general health, menstrual, pregnancy, postpartum, and nutrition
-- Receive instant awareness messages and referral guidance
-- Risk level (Low / Moderate / High) is determined automatically
-- Alerts are automatically created for high-risk and referral cases
-
-### 📋 Assessment History
-- Browse all assessments with filter by woman or risk level
-- Expand each card to read awareness messages and referral reasons
-
-### 📈 Awareness Report
-- Pie chart of risk breakdown
-- Monthly assessment trends bar chart
-- Village-wise registration bar chart
-- Referral rate summary
-
-### 🔔 Alerts
-- View all high-risk and referral alerts
-- Filter by unresolved / resolved
-- Mark alerts as resolved with one click
+| Method | Endpoint             | Description           |
+| ------ | -------------------- | --------------------- |
+| GET    | /                    | Health Check          |
+| GET    | /dashboard           | Dashboard Summary     |
+| GET    | /women               | List Women            |
+| POST   | /women               | Register Woman        |
+| GET    | /women/{id}          | Get Woman Details     |
+| PUT    | /women/{id}          | Update Woman          |
+| GET    | /symptoms/catalogue  | Symptom Catalogue     |
+| POST   | /symptoms            | Log Symptoms          |
+| GET    | /history             | Assessment History    |
+| GET    | /history/{id}        | Individual Assessment |
+| GET    | /report              | Awareness Report      |
+| GET    | /alerts              | List Alerts           |
+| PATCH  | /alerts/{id}/resolve | Resolve Alert         |
 
 ---
 
-## API Endpoints
+## 🤖 Responsible AI Considerations
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/` | Health check |
-| GET | `/dashboard` | Dashboard summary |
-| GET | `/women` | List all women (filterable) |
-| POST | `/women` | Register a new woman |
-| GET | `/women/{id}` | Get a single woman |
-| PUT | `/women/{id}` | Update woman details |
-| GET | `/symptoms/catalogue` | Full symptom list |
-| POST | `/symptoms` | Log symptoms & get assessment |
-| GET | `/history` | All assessments (filterable) |
-| GET | `/history/{id}` | Single assessment |
-| GET | `/report` | Awareness report summary |
-| GET | `/alerts` | List alerts |
-| PATCH | `/alerts/{id}/resolve` | Mark alert as resolved |
-
-Interactive API docs: **http://localhost:8000/docs**
+* Saheli does not diagnose diseases.
+* The system provides awareness guidance and referral recommendations only.
+* Human judgment always takes priority over automated assessments.
+* High-risk alerts should be reviewed by qualified healthcare professionals.
+* Personal health information should be handled responsibly and securely.
+* The platform is designed to support healthcare workers, not replace them.
+* Assessment logic is transparent and explainable.
 
 ---
 
-## Notes for ASHA Workers
+## 📈 Expected Impact
 
-- The app works **fully offline** once running on a local machine.
-- All data is stored in the local `saheli.db` file.
-- Back up `saheli.db` regularly to preserve records.
-- This tool provides **awareness and referral support only** — always escalate high-risk cases to trained medical personnel.
+* Improved health awareness among women
+* Earlier identification of potentially serious health concerns
+* Better support for community health workers
+* Increased referrals for timely medical consultation
+* Improved healthcare access in underserved communities
+* Better documentation of community health observations
 
 ---
 
-## License
+## 🤝 Internship Context
 
-Free to use and adapt for community health purposes.
+This project was developed as part of the **1M1B AI for Sustainability Virtual Internship Program** in collaboration with **IBM SkillsBuild** and **AICTE**.
+
+The project incorporates concepts explored during the internship, including responsible AI, AI-assisted decision support systems, sustainability-focused problem solving, community-centered technology design, and healthcare awareness workflows. IBM BOB was utilized during project ideation, solution refinement, and development planning.
+
+---
+
+## 🔮 Future Scope
+
+* IBM Granite Integration
+* Knowledge-Assisted Health Awareness Recommendations
+* Multilingual Support
+* Mobile Application
+* Offline Synchronization
+* Community Health Trend Analysis
+* AI-Assisted Health Education Resources
+* Enhanced Referral Intelligence
+
+---
+
+## 👩‍💻 Author
+
+**Ritika Goud**
+
+Developed as part of the 1M1B AI for Sustainability Virtual Internship Program.
+
+---
+
+## ⚠️ Disclaimer
+
+Saheli is an awareness and referral support system only.
+
+It does not diagnose diseases, prescribe treatments, or replace professional medical advice. Any high-risk assessment generated by the system should be reviewed by qualified healthcare professionals and followed up through the appropriate healthcare system.
