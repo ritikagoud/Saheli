@@ -185,29 +185,6 @@ Provides awareness guidance and referral recommendations based on recorded sympt
 
 ---
 
-## 📸 Screenshots
-
-### Dashboard
-
-*Add dashboard screenshot here*
-
-### Register Woman
-
-*Add registration page screenshot here*
-
-### Symptom Assessment
-
-*Add assessment screenshot here*
-
-### Alerts Management
-
-*Add alerts screenshot here*
-
-### Reports & Analytics
-
-*Add reports screenshot here*
-
----
 
 ## ⚙️ Installation
 
